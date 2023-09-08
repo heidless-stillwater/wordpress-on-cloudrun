@@ -1,0 +1,25 @@
+"title": "Wordpress deployment on Cloud Run"
+"duration": 10
+"collect_project": true
+"collect_region": true
+"collect_project_number": false
+"collect_zone": false
+"prepend_project": true
+"region_type": "compute"
+"region_default": "europe-west1"
+"custom_settings":
+  - "name": "project_id"
+    "description": "Project ID"
+    "default": ""
+  - "name": "prefix"
+    "description": "Unique prefix used for resource names"
+    "default": "deploystack"
+  - "name": "region"
+    "description": "The region where resources will be deployed"
+    "default": "europe-west1"
+  - "name": "wordpress_image"
+    "description": "Image to run with Cloud Run"
+    "default": "mirror.gcr.io/library/wordpress"
+  - "name": "cloud_run_invoker"
+    "description": "IAM member authorized to access the end-point (for example, 'user:YOUR_IAM_USER' for only you or 'allUsers' for everyone)"
+    "default": "allUsers"
